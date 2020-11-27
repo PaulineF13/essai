@@ -1,0 +1,6 @@
+sudo docker pull genomicpariscentre/sartools
+
+sudo docker run -v /media/partage/bioinfo/G418/prerun/prerun/:/data -i -t genomicpariscentre/sartools
+
+(le dossier d'entrée doit contenir les raw dans un dossier, le template et le target dans un autre. Dans le template, mettre le chemin d'accès au target entier)
+/!\ les chemins dans le template doivent être ceux du docker. Donc /data/DESeq2, /data, ou /data/htseq-count
